@@ -1,0 +1,91 @@
+/* Style global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('3.jpg'); /* Remplace '3.jpg' par le chemin correct de l'image */
+    background-size: cover; /* Couvre toute la page */
+    background-position: center; /* Centre l'image */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Remplit la hauteur de l'écran */
+}
+
+/* Conteneur principal */
+.container {
+    background-color: #fff; /* Fond blanc pour le conteneur */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center; /* Centre le texte */
+    margin-top: 170px; /* Décale le conteneur vers le bas (ajuste la valeur selon tes besoins) */
+}
+
+/* Titre */
+h1 {
+    margin-bottom: 20px;
+    color: #ff66b2; /* Couleur rose pour le titre */
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin: 10px 0 5px; /* Espacement des labels */
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ff66b2; /* Bordure rose */
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 15px; /* Espacement sous les champs */
+}
+
+/* Message de note */
+.note {
+    margin: 10px 0; /* Espacement pour la note */
+    font-size: 12px; /* Taille de police plus petite */
+    color: #ff3399; /* Couleur rose pour la note */
+}
+
+/* Bouton */
+button {
+    background-color: #ff66b2; /* Couleur rose pour le bouton */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3399; /* Couleur rose plus foncé au survol */
+}
+
+/* Lien de connexion */
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #ff66b2; /* Couleur rose pour le lien */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}

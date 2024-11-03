@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white; /* Couleur du texte en blanc */
+    font-family: Arial, sans-serif;
+    background-image: url('Bimbo crush.png'); /* Image de fond */
+    background-size: cover; /* Couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Hauteur de la page */
+    display: flex; /* Utiliser flexbox */
+    flex-direction: column; /* Disposition verticale */
+    justify-content: space-between; /* Espacement entre les éléments */
+    overflow: hidden; /* Empêche le défilement de la page */
+}
+
+#missions-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto; /* Centré horizontalement */
+    background: rgba(255, 255, 255, 0); /* Conteneur transparent */
+    padding: 20px; /* Espace intérieur */
+    padding-bottom: 100px; /* Espace en bas pour éviter le chevauchement avec le bouton */
+    border-radius: 10px; /* Bords arrondis */
+    flex-grow: 1; /* Permet au conteneur de prendre l'espace restant */
+    top: 300px; 
+}
+
+.level-text {
+    position: relative;
+    top: 170px; /* Remonter un peu, ajuste selon tes besoins */
+    left: 10px; /* Décaler un peu vers la gauche */
+    font-size: 1.6em; 
+}
+
+
+.mission {
+    margin: 40px 0; /* Espace entre les missions */
+    color: rgb(201, 64, 114);
+    font-weight: bolder;
+    font-size: 1.5em; 
+}
+
+.mission-text {
+    color: rgb(211, 118, 132); /* Une teinte de rose plus clair */
+    font-size: 1em; /* Taille de police légèrement plus petite */
+    font-weight: normal; /* Ne pas en gras */
+}
+
+
+/* Style pour les cases à cocher */
+.mission-checkbox {
+    width: 24px; /* Largeur de la case */
+    height: 24px; /* Hauteur de la case */
+    margin-right: 10px; /* Espace entre la case et le texte */
+    cursor: pointer; /* Curseur en main */
+    -webkit-appearance: none; /* Suppression de l'apparence par défaut */
+    -moz-appearance: none; /* Suppression de l'apparence par défaut */
+    appearance: none; /* Suppression de l'apparence par défaut */
+    border: 2px solid #ff66b2; /* Bordure rose */
+    border-radius: 50%; /* Rendre la case ronde */
+    background-color: rgb(255, 216, 236); /* Fond blanc */
+    position: relative; /* Nécessaire pour le positionnement */
+    outline: none; /* Suppression du contour par défaut */
+}
+
+/* État coché de la case */
+.mission-checkbox:checked {
+    background-color: rgb(255, 216, 236); /* Fond rose lorsque coché */
+    border: 2px solid #ff66b2; /* Garder la bordure rose */
+}
+
+/* Pseudo-élément pour le nœud rose */
+.mission-checkbox:checked::after {
+    content: '🎀'; /* Emoji de nœud rose */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le nœud */
+    font-size: 16px; /* Ajuste la taille de l'emoji */
+}
+
+/* Style du bouton de soumission */
+button {
+    background-color: #ff66b2; /* Rose vif */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 40px; /* Marge au-dessus du bouton */
+    display: block; /* Change à block pour centrer */
+    width: 35%; /* Prend 50% de la largeur */
+    align-items: center; /* Centre le contenu horizontalement */
+    margin: 20px auto; /* Centre le conteneur sur la page */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3399; /* Accentuation au survol */
+}
+
+#next-level-container {
+    text-align: center; /* Centre le contenu du conteneur */
+    margin-top: 20px; /* Espace au-dessus du conteneur */
+}
+
+#reset-level {
+    display: block; /* Afficher le lien comme un bloc pour qu'il soit sur une nouvelle ligne */
+    margin-top: 10px; /* Espace entre le bouton et le lien */
+    color: #ff66b2; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+    text-decoration: underline; /* Souligner le texte pour le faire ressortir */
+    font-size: 1em; /* Taille de la police pour le lien */
+    cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+    opacity: 0.8; /* Légère transparence pour un effet visuel */
+}
+
+#reset-level:hover {
+    opacity: 1; /* Augmenter l'opacité au survol */
+}
+
+/* Classe pour le fond de fin de jeu */
+.background-finish {
+    background-image: url('fin.jpg'); /* Image de fond de fin */
+    background-size: cover; /* Couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite de répéter l'image */
+
+
+
+
+    
+}
+#background {
+    position: relative; /* Fond positionné relatif */
+    z-index: 1; /* Fond en dessous du bouton */
+}
+

@@ -1,0 +1,7 @@
+Connexion et authentification : index.html recueille le pseudo et le mot de passe, puis les sauvegarde dans localStorage. Cela vous permet de simuler une connexion et de rediriger vers main.html.
+
+Progression par niveau : Dans main.html, chaque niveau a trois missions. Chaque mission peut être cochée, et la progression est sauvegardée dans localStorage.
+
+Passage de niveau : Lorsqu’une joueuse termine toutes les missions d’un niveau, le bouton "Passer au niveau suivant" se déverrouille, et elle peut passer au niveau suivant.
+
+Cela devrait vous donner une bonne base pour un système de niveaux interactif dans Visual Studio Code !
